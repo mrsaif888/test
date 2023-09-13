@@ -12,6 +12,10 @@ $nutrition = [
   $nutrition['fiber'] = 2.1;
   $nutrition['protien'] = 7.3;
   
+/* updating  variables */
+$name  = 'Guest';
+$name  = 'Ivy';
+$price = 5;
 
 ?>
 <!DOCTYPE html>
