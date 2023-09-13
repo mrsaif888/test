@@ -30,7 +30,12 @@ $best_sellers = ['Chocolate', 'Mints', 'Fudge', 'Licorice',
     /*short-hand*/ 
   $name      = 'Saif';
   $favorites = ['kitkat', 'excel', 'Chocolates',];
-  
+  /* Arithmetic-operations */
+$items    = 15;
+$cost     = 10;
+$subtotal = $cost * $items;
+$tax      = ($subtotal / 100) * 20;
+$total    = $subtotal + $tax;
 ?>
 <!DOCTYPE html>
 <html>
@@ -73,5 +78,12 @@ $best_sellers = ['Chocolate', 'Mints', 'Fudge', 'Licorice',
       <h2>Welcome <?= $name ?></h2>
     <p>Your favorite type of candy is:
        <?= $favorites[0] ?>.</p>
+
+       <h2>Shopping Cart</h2>
+    <p>Items: <?= $items ?></p>
+    <p>Cost per pack: $<?= $cost ?></p>
+    <p>Subtotal: $<?= $subtotal ?></p>
+    <p>Tax: $<?= $tax ?></p>
+    <p>Total: $<?= $total ?></p>
   </body>
 </html>
