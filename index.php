@@ -36,6 +36,11 @@ $cost     = 10;
 $subtotal = $cost * $items;
 $tax      = ($subtotal / 100) * 20;
 $total    = $subtotal + $tax;
+
+/* string-operators */
+$prefix  = 'Thank you';
+$name    = 'Saif';
+$message = "$prefix  $name";
 ?>
 <!DOCTYPE html>
 <html>
@@ -85,5 +90,8 @@ $total    = $subtotal + $tax;
     <p>Subtotal: $<?= $subtotal ?></p>
     <p>Tax: $<?= $tax ?></p>
     <p>Total: $<?= $total ?></p>
+
+    <h2><?= $name ?>'s Order</h2>
+    <p><?= $message ?></p>
   </body>
 </html>
