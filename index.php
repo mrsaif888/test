@@ -17,6 +17,9 @@ $name  = 'Guest';
 $name  = 'Ivy';
 $price = 5;
 
+/* index arrays */
+$best_sellers = ['Chocolate', 'Mints', 'Fudge', 'Licorice',
+    'Bubble gum', 'Toffee', 'Jelly beans',];
 ?>
 <!DOCTYPE html>
 <html>
@@ -36,5 +39,14 @@ $price = 5;
     <p>Salt:  <?php echo $nutrition['salt']; ?>%</p>
     <p>Fiber:  <?php echo $nutrition['fiber']; ?>%</p>
     <p>Protien:  <?php echo $nutrition['protien']; ?>%</p>
+
+    <h2>Best Sellers</h2>
+    <ul>
+      <li><?php echo $best_sellers[0]; ?></li>
+      <li><?php echo $best_sellers[1]; ?></li>
+      <li><?php echo $best_sellers[2]; ?></li>
+      <li><?php echo $best_sellers[3]; ?></li>
+      <li><?php echo $best_sellers[4]; ?></li>
+    </ul>
   </body>
 </html>
